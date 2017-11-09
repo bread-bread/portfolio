@@ -1,0 +1,58 @@
+@media screen and (max-width: 992px){
+    .conteiner {
+        width: 750px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    /*menu*/
+    .sidebar {
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;  
+    }
+    .menu__nav {
+        text-align: left;
+    }
+    .menu__elem {   
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 30px;
+    }
+    .menu__elem:first-child {
+        margin-left: 0;
+    }
+    .menu__elem_active .menu__link {
+        font-weight: bold;
+        color: #33c1e3;
+        border: none;
+        box-sizing: border-box; 
+    }
+    .menu__link {
+        padding: 0;
+        border: none;
+    }
+    /*content_about*/
+    .about {
+        width: 100%;
+        float: none;
+    }
+    .about__left {
+        width: 35%;
+        text-align: center;
+    }
+    .about__photo-img {
+        width: 175px;
+        height: 175px;
+    }
+    .about__right {
+        width: 65%;
+    }
+
+    /*content_career*/
+    .main {
+        float: none;
+        width: 100%;
+    }
+
+    /*content_portfolio*/
+}

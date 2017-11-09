@@ -1,0 +1,17 @@
+/*layout setups*/
+@import "layout/normalize.scss";
+@import "layout/adjustment.scss";
+@import "layout/fonts.scss";
+/*sections*/
+@import "sections/header.scss";
+@import "sections/about.scss";
+@import "sections/sidebar.scss";
+@import "sections/portfolio.scss";
+@import "sections/hello.scss";
+@import "sections/career.scss";
+@import "sections/footer.scss";
+// responsive
+@import "responsive/desctop.scss";
+@import "responsive/laptop.scss";
+@import "responsive/tablet.scss";
+@import "responsive/mobile.scss";

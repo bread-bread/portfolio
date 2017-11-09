@@ -1,0 +1,113 @@
+.title{
+	font-size: 35px;
+	line-height: 45px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-weight: 500;
+}
+.career__left{
+	float: left;
+	width: 220px;
+}
+.career__right{
+	float: right;
+	width: 455px;
+}
+.career__photo{
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+  	overflow: hidden;
+  	height: 220px;
+}
+.career__photo-img {
+	width: 220px;
+	height: 220px;
+}
+.career__item{
+  	margin-bottom: 20px;
+  	text-align: right;
+}
+.career__item-wrap{
+	width: 380px;
+	color: #414141;
+	border-radius: 10px;
+  	background-color: #fff;
+  	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  	padding: 15px 20px;
+  	box-sizing: border-box;
+  	display: inline-block;
+  	text-align: left;
+  	position: relative;
+	transition: all .2s;
+}
+.career__item:last-child .career__item-wrap::after{
+	display: none;
+}
+.career__item:first-child .career__item-wrap::before{
+	display: none;
+}
+.career__item-wrap::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	background-color: #ddd;
+	left: -20px;
+	top: 60%;
+	bottom: -22px;
+}
+.career__item-wrap::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	background-color: #ddd;
+	left: -20px;
+	top: 0;
+	bottom: 58%;
+}
+.career__title{
+	font-size: 21px;
+	line-height: 26px;
+}
+.career__desc,
+.career__period{
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 300;
+}
+.career__year{
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	font-size: 14px;
+	color: #727272;
+	margin-right: 35px;
+	margin-top: -8px;
+}
+.career__year::after{
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #33c1e3;
+	position: absolute;
+	border: 5px solid #f6f6f6;
+	margin-bottom: -10px;
+	right: -26px;
+	top: -1px;
+}
+.career__item:hover{
+	.career__item-wrap {
+	background-color: #33c1e3;
+	color: #fff;
+	}
+	.career__year{
+		color: #33c1e3;
+		font-weight: 600;
+		font-size: 16px;
+	}
+	.career__year::after{
+		border: 5px solid #94e0f2;
+	}
+}

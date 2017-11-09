@@ -1,0 +1,52 @@
+@media screen and (max-width:480px) {
+    .conteiner {
+        width: 95%;
+    }
+    /*header*/
+    .user__name {
+        font-size: 14px;
+    }
+    /*navigation*/
+    .menu__nav {
+        text-align: center;
+    }
+    .menu__elem {
+        margin-left: 5%;
+    }
+    .menu__link-text {
+        font-size: 14px;
+    }
+    .menu__link-icon {
+        display: none;
+    }
+    /*content_about*/
+    .about__title {
+        font-size: 28px;
+    }
+    .about__photo-img {
+        width: 140px;
+        height: 140px;
+    }
+    .about__desc {
+        font-size: 16px;
+    }
+    .about__rezume-link-text {
+        font-size: 14px;
+    }
+
+    /*content_career*/
+    .title {
+        font-size: 28px;
+    }
+    .career__title {
+        font-size: 18px;
+    }
+    .career__desc, .career__year {
+        font-size: 16px;
+    }
+    /*content_portfolio*/
+
+    .portfolio__list {
+        text-align: center;
+    }
+}

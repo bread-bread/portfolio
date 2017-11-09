@@ -1,0 +1,134 @@
+.header{
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	margin-bottom: 25px;
+}
+.header .conteiner{
+	height: 80px;
+}
+.header__left {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.header__right{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.user{
+	margin-top: 8px;
+	display: inline-block;
+}
+.user__photo,
+.user__name{
+	display: inline-block;
+	vertical-align: middle;
+}
+.user__photo{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #ddd;
+}
+.user__photo-img{
+	display: block;
+	border: 0;
+}
+.user__name{
+	font-size: 18px;
+	margin-left: 15px;
+}
+.contacts{
+	margin-top: 29px;
+	position: relative;
+	display: inline-block;
+}
+.contacts__button{
+	font-size: 18px;
+	color: #32c3e5;
+	border-style: solid;
+  	border-width: 0 0 5px 0;
+    border-image: url('./../img/decor/underline.png') 5 round round;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: bold;
+	&:hover {
+		color: #e85f61;
+		border-style: solid;
+  		border-width: 0 0 5px 0;
+    	border-image: url('./../img/decor/underline-hover.png') 5 round round;
+		box-sizing: border-box;
+	}	
+}
+.contacts:hover .contacts__drop {
+	top: 100%;
+}
+.contacts__drop {
+	padding: 15px 20px;
+	background: #fff;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	margin-top: 15px;
+	position: absolute;
+	z-index: 15;
+	top: -9999%;
+	left: 10%;
+	transform: translateX(-50%);
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 20px;
+		left: 0;
+		right: 0;
+		top: -19px;
+	}
+}
+.contacts__triangle {
+	position: absolute;
+	transform: translateX(-50%);
+	top: -20px;
+	left: 70%;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border: 10px solid transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(-50%);
+	}
+}
+.contacts__triangle::before {
+	border-bottom-color: #dedede;
+}
+.contacts__triangle::after {
+	border-bottom-color: #fff;
+	margin-top: 1px;
+}
+.contacts__list {
+	text-align: left;
+}
+.contacts__item {
+	margin-bottom: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.contacts__link {
+	font-size: 18px;
+	font-weight: 300;
+	color: #414141;
+	display: block;
+	white-space: nowrap;
+}
+.contacts__icon {
+	color: #32c3e5;
+	margin-right: 12px;
+}
