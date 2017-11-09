@@ -39,6 +39,6 @@
 
 @each $item in ig, vk, gh {
 	.social__link_#{$item} {
-		background: url("/../img/icons/#{$item}.svg") center center no-repeat;
+		background: url("./../img/icons/#{$item}.svg") center center no-repeat;
 	}
 }
