@@ -13,9 +13,14 @@
 	margin-right: 12px;
 	margin-bottom: 12px;
 	vertical-align: top;
-	&:hover .portfolio__desc-title {
-		color: #e85f61;
-	}
+	&:hover {
+		.portfolio__pic-img {
+			transform: scale(1.1);
+		}
+		.portfolio__desc-title {
+			color: #e85f61;
+		}
+	} 
 }
 .portfolio__pic {
 	width: 220px;
@@ -24,6 +29,8 @@
 	overflow: hidden;
 	&-img {
 		width: 100%;
+		display: block;
+		transition: .3s;
 	}
 }
 .portfolio__desc {
@@ -35,6 +42,7 @@
 	box-sizing: border-box;
 	word-wrap: break-word;
 	&-title {
+		transition: .3s;
 		color: #33c1e3;
 		font-size: 21px;
 		line-height: 24px;
